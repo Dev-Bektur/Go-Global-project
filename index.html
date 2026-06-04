@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GoGlobal</title>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="floating-elements">
+      <div class="float-shape shape-1"></div>
+      <div class="float-shape shape-2"></div>
+      <div class="float-shape shape-3"></div>
+      <div class="float-shape shape-4"></div>
+      <div class="float-shape shape-5"></div>
+    </div>
+
+    <div class="loader-wrapper" id="loader">
+      <div class="loader-content">
+        <div class="loader-logo">GoGlobal</div>
+        <img src="./image/svg/airplane-svgrepo-com.svg" alt="">
+      </div>
+    </div>
+
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <nav>
+      <div class="logo">GoGlobal</div>
+
+      <ul class="nav-links desktop-menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#programs">Programs</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="burger-menu" id="burgerMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+
+    <div class="mobile-menu-overlay" id="mobileMenu">
+      <div class="mobile-menu-content">
+        <button class="close-menu" id="closeMenu">&times;</button>
+        <ul class="mobile-nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#programs">Programs</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#join">Join</a></li>
+          <li><a href="#join" class="mobile-cta">See new opportunities</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#" class="mobile-cta">Join Our Team</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <section class="hero" id="home">
+      <div class="bg-shapes">
+        <div class="shape shape1"></div>
+        <div class="shape shape2"></div>
+        <div class="shape shape3"></div>
+      </div>
+
+      <div class="hero-content">
+        <div class="hero-badge">✨ Study Abroad Made Simple</div>
+        <h1 class="gradient-text">Your Gateway to Global Education</h1>
+        <p class="hero-subtitle">
+          Master SAT, IELTS, TOEFL and unlock scholarships to world-class universities. Join a community of ambitious learners reaching for their dreams.
+        </p>
+        <div class="cta-buttons">
+          <a href="#programs" class="btn btn-primary">Explore Programs</a>
+          <a href="#about" class="btn btn-secondary">Learn More</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="programs" id="programs">
+      <h2 class="section-title">Our Programs</h2>
+      <p class="section-subtitle">Choose your path to academic excellence with our comprehensive preparation programs</p>
+
+      <div class="programs-grid">
+        <div class="program-card" onclick="window.location.href='sat.html'">
+          <div class="program-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/><path d="M6 6h10M6 10h10M6 14h10"/></svg>
+          </div>
+          <h3>SAT Preparation</h3>
+          <p>Master the SAT with expert guidance, practice tests, and proven strategies to achieve your target score.</p>
+          <a href="#" class="program-link">Learn More →</a>
+        </div>
+
+        <div class="program-card" onclick="window.location.href='ielts.html'">
+          <div class="program-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          </div>
+          <h3>IELTS Training</h3>
+          <p>Achieve your desired IELTS band score with comprehensive training covering all four sections.</p>
+          <a href="ielts.html" class="program-link">Learn More →</a>
+        </div>
+
+        <div class="program-card" onclick="window.location.href='toefl.html'">
+          <div class="program-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+          </div>
+          <h3>TOEFL Excellence</h3>
+          <p>Excel in TOEFL with interactive practice sessions and personalized feedback from experts.</p>
+          <a href="toefl.html" class="program-link">Learn More →</a>
+        </div>
+
+        <div class="program-card">
+          <div class="program-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>
+          </div>
+          <h3>Motivation Letters</h3>
+          <p>Craft compelling essays and statements that capture attention of admissions committees worldwide.</p>
+          <a href="#" class="program-link">Learn More →</a>
+        </div>
+
+        <div class="program-card">
+          <div class="program-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/><path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5M21.5 12v6"/></svg>
+          </div>
+          <h3>Universities & Scholarships</h3>
+          <p>Discover top universities and secure funding opportunities for your international education journey.</p>
+          <a href="#" class="program-link">Learn More →</a>
+        </div>
+
+        <div class="program-card">
+          <div class="program-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <h3>Leadership Development</h3>
+          <p>Build essential leadership skills and earn certificates that strengthen your university applications.</p>
+          <a href="#" class="program-link">Learn More →</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials">
+      <h2 class="section-title">What Students Say</h2>
+      <p class="section-subtitle">Real stories from our community</p>
+
+      <div class="testimonials-slider">
+        <div class="testimonial-card">
+          <div class="quote-icon">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor" opacity="0.2"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9 Bethlehem-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+          </div>
+          <p class="testimonial-text">GoGlobal helped me get into the university of my dreams! The SAT prep was top-notch.</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">A</div>
+            <div>
+              <div class="author-name">Aigerim K.</div>
+              <div class="author-role">Stanford University</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="quote-icon">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor" opacity="0.2"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9 Bethlehem-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+          </div>
+          <p class="testimonial-text">Thanks to GoGlobal, I received a scholarship to Europe. Incredible support and real results!</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">D</div>
+            <div>
+              <div class="author-name">Damir S.</div>
+              <div class="author-role">University of Amsterdam</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="quote-icon">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor" opacity="0.2"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9 Bethlehem-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+          </div>
+          <p class="testimonial-text">IELTS 7.5 in 2 months! GoGlobal is more than just a course, it's a community of like-minded individuals.</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">Z</div>
+            <div>
+              <div class="author-name">Zhanna M.</div>
+              <div class="author-role">University of Toronto</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="glass-features">
+      <div class="glass-bg"></div>
+      <div class="glass-container">
+        <h2 class="section-title" style="color: white; position: relative; z-index: 2">What Makes Us Different</h2>
+
+        <div class="glass-grid">
+          <div class="glass-card">
+            <div class="glass-icon">
+              <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
+                <circle cx="30" cy="30" r="25" stroke="white" stroke-width="2" opacity="0.3" />
+                <path d="M30 15L35 25L45 27L37 35L39 45L30 40L21 45L23 35L15 27L25 25L30 15Z" fill="white" />
+              </svg>
+            </div>
+            <h3>100% Free</h3>
+            <p>All our resources, mentorship, and materials are completely free. No hidden costs, ever.</p>
+          </div>
+
+          <div class="glass-card">
+            <div class="glass-icon">
+              <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
+                <rect x="15" y="15" width="30" height="30" rx="5" stroke="white" stroke-width="2" opacity="0.3" />
+                <path d="M25 30L28 33L35 26" stroke="white" stroke-width="3" stroke-linecap="round" />
+              </svg>
+            </div>
+            <h3>Peer Support</h3>
+            <p>Learn from students who've been through the same journey and succeeded.</p>
+          </div>
+
+          <div class="glass-card">
+            <div class="glass-icon">
+              <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
+                <circle cx="30" cy="25" r="8" stroke="white" stroke-width="2" />
+                <path d="M20 45C20 38 24 35 30 35C36 35 40 38 40 45" stroke="white" stroke-width="2" />
+              </svg>
+            </div>
+            <h3>Community Driven</h3>
+            <p>Built by students, for students. We understand your challenges because we faced them too.</p>
+          </div>
+
+          <div class="glass-card">
+            <div class="glass-icon">
+              <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
+                <rect x="20" y="15" width="20" height="30" rx="3" stroke="white" stroke-width="2" />
+                <line x1="25" y1="25" x2="35" y2="25" stroke="white" stroke-width="2" />
+                <line x1="25" y1="30" x2="35" y2="30" stroke="white" stroke-width="2" />
+                <line x1="25" y1="35" x2="32" y2="35" stroke="white" stroke-width="2" />
+              </svg>
+            </div>
+            <h3>Proven Methods</h3>
+            <p>Strategies and resources tested by students who scored in the top percentiles.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="why-section">
+      <div class="why-container">
+        <h2 class="section-title">Why Choose GoGlobal?</h2>
+        <p class="section-subtitle">We provide more than just exam preparation</p>
+
+        <div class="why-grid">
+          <div class="why-card">
+            <div class="why-number">01</div>
+            <h3>Proven Results</h3>
+            <p>Our students have been accepted to top universities worldwide including Harvard, MIT, Oxford, and more.</p>
+          </div>
+
+          <div class="why-card">
+            <div class="why-number">02</div>
+            <h3>Expert Mentors</h3>
+            <p>Learn from students who have successfully navigated the admission process and achieved their dreams.</p>
+          </div>
+
+          <div class="why-card">
+            <div class="why-number">03</div>
+            <h3>Free Resources</h3>
+            <p>Access comprehensive study materials, practice tests, and guidance completely free of charge.</p>
+          </div>
+
+          <div class="why-card">
+            <div class="why-number">04</div>
+            <h3>Leadership Development</h3>
+            <p>Earn certificates and build skills that strengthen your university applications and future career.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="how-it-works">
+      <div class="how-container">
+        <h2 class="section-title">How It Works</h2>
+        <p class="section-subtitle">Your journey to studying abroad in 4 simple steps</p>
+
+        <div class="steps-timeline">
+          <div class="step">
+            <div class="step-number">1</div>
+            <div class="step-content">
+              <h3>Join GoGlobal</h3>
+              <p>Fill out the application form and become part of our community of ambitious students.</p>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-number">2</div>
+            <div class="step-content">
+              <h3>Choose Your Path</h3>
+              <p>Select the exams you need (SAT, IELTS, TOEFL) and access our comprehensive resources.</p>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-number">3</div>
+            <div class="step-content">
+              <h3>Prepare & Practice</h3>
+              <p>Study with our materials, get mentorship, and complete tasks to earn leadership certificates.</p>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-number">4</div>
+            <div class="step-content">
+              <h3>Apply & Succeed</h3>
+              <p>Apply to universities with confidence, knowing you're fully prepared for success.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section" id="about">
+      <div class="cta-content">
+        <h2>Ready to Start Your Journey?</h2>
+        <p>Join GoGlobal - a young educational project created to help you achieve your dream of studying abroad. Together, we'll achieve more! 💫</p>
+        <a href="https://t.me/GoGlobal_2" class="btn btn-white">Join Our Community</a>
+        <a href="join.html" class="btn btn-secondary">See new opportunities</a>
+      </div>
+    </section>
+
+    <footer id="contact">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <h3>GoGlobal_2</h3>
+          <p>Empowering students to achieve their dreams of studying abroad through comprehensive preparation and community support.</p>
+          <div class="social-links">
+            <a href="https://t.me/goglobal" class="social-link" target="_blank">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2 11 13M22 2l-7 20-4-9-9-4Z"/></svg>
+            </a>
+            <a href="#" class="social-link">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            </a>
+            <a href="#" class="social-link">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37zM17.5 6.5h.01"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#programs">Programs</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h4>Programs</h4>
+          <ul>
+            <li><a href="#">SAT</a></li>
+            <li><a href="#">IELTS</a></li>
+            <li><a href="#">TOEFL</a></li>
+            <li><a href="#">Scholarships</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h4>Get in Touch</h4>
+          <ul>
+            <li><a href="https://t.me/goglobal" target="_blank">Telegram: @GoGlobal</a></li>
+            <li><a href="#">Email (Coming Soon)</a></li>
+            <li><a href="#">Instagram (Coming Soon)</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 GoGlobal. All rights reserved. Made with ❤️ for ambitious learners worldwide.</p>
+      </div>
+    </footer>
+
+    <div class="particles">
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+    </div>
+
+    <script>
+      // Hide loader when page loads
+      window.addEventListener("load", () => {
+        setTimeout(() => {
+          document.getElementById("loader").classList.add("hidden");
+        }, 1500);
+      });
+
+      // Custom cursor glow effect
+      const cursorGlow = document.getElementById("cursorGlow");
+      document.addEventListener("mousemove", (e) => {
+        cursorGlow.style.left = e.clientX + "px";
+        cursorGlow.style.top = e.clientY + "px";
+      });
+
+      // Smooth scroll
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target) {
+            target.scrollIntoView({
+              behavior: "smooth",
+              block: "start",
+            });
+          }
+        });
+      });
+
+      // Scroll Reveal Animation via Intersection Observer
+      const revealElements = document.querySelectorAll(".program-card, .why-card, .testimonial-card, .step, .glass-card");
+      
+      const scrollReveal = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("revealed");
+              scrollReveal.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.1, rootMargin: "0px 0px -50px 0px" }
+      );
+
+      revealElements.forEach((el) => {
+        // Инициализируем стартовые стили через JS, если их нет в CSS
+        el.style.opacity = "0";
+        el.style.transform = "translateY(40px)";
+        el.style.transition = "all 0.6s cubic-bezier(0.25, 1, 0.5, 1)";
+        scrollReveal.observe(el);
+      });
+
+      // Кастомный обработчик для добавления класса активации анимации
+      const mutationObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if(entry.isIntersecting) {
+            entry.target.style.opacity = "1";
+            entry.target.style.transform = "translateY(0)";
+          }
+        });
+      }, { threshold: 0.1 });
+      
+      revealElements.forEach(el => mutationObserver.observe(el));
+
+      // Burger Menu Functionality
+      const burgerMenu = document.getElementById("burgerMenu");
+      const mobileMenu = document.getElementById("mobileMenu");
+      const closeMenu = document.getElementById("closeMenu");
+      const mobileLinks = document.querySelectorAll(".mobile-nav-links a");
+
+      const toggleMenu = (isActive) => {
+        burgerMenu.classList.toggle("active", isActive);
+        mobileMenu.classList.toggle("active", isActive);
+        document.body.style.overflow = isActive ? "hidden" : "auto";
+      };
+
+      burgerMenu.addEventListener("click", () => {
+        const isOpen = mobileMenu.classList.contains("active");
+        toggleMenu(!isOpen);
+      });
+
+      closeMenu.addEventListener("click", () => toggleMenu(false));
+      mobileLinks.forEach((link) => link.addEventListener("click", () => toggleMenu(false)));
+    </script>
+  </body>
+</html>
